@@ -14,4 +14,4 @@ desk_3 = math.ceil(class_3 / 2)
 
 desk_all = (desk_1 + desk_2 + desk_3)
 
-print('Всього потрібно закупити' + str(desk_all) + ' парт!')
+print('Всього потрібно закупити ' + str(desk_all) + ' парт!')
