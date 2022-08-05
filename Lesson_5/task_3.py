@@ -1,11 +1,19 @@
 n = max_number = min_number = total = int(input("Введіть будь-ласка число: "))
+
 even_1numbers = 0
+
 even_2numbers = 0
+
 noteven_1numbers = 0
+
 noteven_2numbers = 0
+
 number_of_numbers = 0
+
 d = n % 2  # вирахвуємо парність до початку циклу
+
 #  print("d" + str(d)) контрольна перевірка парності чисел до циклу
+
 if d == 0:
     even_1numbers = 1
 
