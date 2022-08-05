@@ -12,7 +12,7 @@ if d == 0:
 if d == 1:
     noteven_1numbers = 1
 
-print("1 парн" + str(even_1numbers))
+#  print("1 парн" + str(even_1numbers)) контрольна перевірка НЕпарності чисел до циклу
 
 while True:
     n = int(input('Введіть будь-луска число: '))
@@ -28,7 +28,7 @@ while True:
 
     if d_2 == 1 and d_2 != 0:
         noteven_2numbers += 1
-        print("2 непарн" + str(even_2numbers))
+        #  print("2 непарн" + str(even_2numbers)) контрольна перевірка непарності чисел в циклі
 
     if n > max_number and n != 0:
         max_number = n
@@ -44,7 +44,7 @@ while True:
         sum_all_noteven_numbers = noteven_1numbers + noteven_2numbers
         print("Всьогот парних числел: " + str(sum_all_even_numbers))
         print("Всьогот НЕпарних числел: " + str(sum_all_noteven_numbers))
-        print("Середнє арифметичне :" + str(arithmetic_mean))
+        print("Середнє арифметичне: " + str(arithmetic_mean))
         break
 
-#  8 годин
+# 8 годин
