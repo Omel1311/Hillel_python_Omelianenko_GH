@@ -1,24 +1,14 @@
-n = max_number = min_number = total = int(input("Введіть будь-ласка число: "))
-even_1numbers = 0
-even_2numbers = 0
-noteven_1numbers = 0
-noteven_2numbers = 0
-number_of_numbers = 0
-d = n % 2  # вирахвуємо парність до початку циклу
-#  print("d" + str(d)) контрольна перевірка парності чисел до циклу
-if d == 0:
-    even_1numbers = 1
-
-if d == 1:
-    noteven_1numbers = 1
-
-print("1 парн" + str(even_1numbers))
-
 while True:
-    n = int(input('Введіть будь-луска число: '))
-    total += n
-    number_of_numbers += 1
-    arithmetic_mean = total / number_of_numbers
+    a = input('Введіть число: ')
+    for i in range(len(a)):
+        if a[i] == a[i + 1]:
+            print('да')
+            break
+        else:
+            print('ні')
+            break
+    continue
+
 
     d_2 = n % 2  # вирахвуємо парність в циклі
 
