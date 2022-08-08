@@ -1,11 +1,11 @@
-p = '   ddscsdc  '
-s=3434
-i=233
-print (id(p))
-p = p + 'roofjf'
-print(f'ldfkjdlfj {4+67} sdffwf ')
+while True:
 
-print(f'{p=}'*5)
-print (f'{id(p)} це наш ід' *33)
+    words_input = input('Введіть два слова через пробіл: ')
+    number_words = len(words_input.split())
 
-p.casefold()
+    while number_words == 2:
+        reverse = words_input[::-1]
+        tile = reverse.title()
+        print(tile)
+
+        break
