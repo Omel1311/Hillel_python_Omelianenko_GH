@@ -14,7 +14,6 @@ if n_1.isdigit():
                     print(j, end=" ")
                 for j in range(i - 1, 0, -1):
                     print(j, end=" ")
-
                 print()
 
         elif p == "по центру":
@@ -25,7 +24,7 @@ if n_1.isdigit():
                 m = m - 1
                 for j in range(1, i + 2):
                     print(j, end=' ')
-                print(" ")
+                print()
         else:
             print("Не вірний формат числа! Програма, нажаль, закінччує роботу!!!1")
     else:
