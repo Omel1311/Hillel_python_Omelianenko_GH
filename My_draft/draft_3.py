@@ -13,7 +13,6 @@ while True:
             a[i] = a[i - 1]
 
         a[k] = c
-
         a.append(ap)
         print(f"Cтало:{a}")
         print("*"*60)

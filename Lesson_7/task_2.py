@@ -8,7 +8,7 @@ while True:
         ap = input("Введіть значення, яке буде додано в кінці списку: ")
         print("*" * 60)
         print(f"Було: {a}")
-
+        a.append(a[len(a)-1])
         for i in range(len(a) - 1, k, -1):
             a[i] = a[i - 1]
 
