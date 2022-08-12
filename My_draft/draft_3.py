@@ -1,16 +1,21 @@
-
 while True:
-    string = input('Введіть рядок: ')
-    char = input('Введіть символ: ')
+    q = input('Введіть список із цілих чисел: ')
+    a = list(q)
+    k = int(input('Введіть число (індекс К): '))
 
-    while char in string:
-        print('Індекс(и) символу: ')
-        for i in range(len(string)):
-            if string[i] == char:
-                print(string.find(char,i))
-        break
+    if k <= len(q):
+        c = int(input('Введіть значення (число С): '))
+        ap = input("Введіть значення, яке буде додано в кінці списку: ")
+        print("*" * 60)
+        print(f"Було: {a}")
+        a.append(a[len(a)-1])
+        for i in range(len(a) - 1, k, -1):
+            a[i] = a[i - 1]
 
+        a[k] = c
+
+        a.append(ap)
+        print(f"Cтало:{a}")
+        print("*"*60)
     else:
-        print('Такого символу в рядку не має!')
-
-
+        print("Завелике число! Введіть ще раз")
