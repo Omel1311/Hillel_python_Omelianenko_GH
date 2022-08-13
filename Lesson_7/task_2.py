@@ -1,13 +1,15 @@
-while True:
+hile True:
     q = input('Введіть список із цілих чисел: ')
     a = list(q)
     k = int(input('Введіть число (індекс К): '))
+    c = int(input('Введіть значення (число С): '))
 
     if k <= len(q):
-        c = int(input('Введіть значення (число С): '))
         print("*" * 60)
         print(f"Було: {a}")
-        a.append(a[len(a)-1])
+        a.append(3) # можна ввести будь-яке значеня
+        print(f"Проміжне значення: {a}")
+
         for i in range(len(a) - 1, k, -1):
             a[i] = a[i - 1]
 
@@ -16,4 +18,4 @@ while True:
         print("*"*60)
 
     else:
-        print("Завелике число! Введіть ще раз")
+        print("Завеликий індекс (K)! Введіть ще раз")
