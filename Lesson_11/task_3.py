@@ -9,7 +9,7 @@ def prime_numbers(n_1, n_2):
             lst_prime_numbers.append(j)
 
     print(lst_prime_numbers)
-    print('*'*220)
+    print('*'*160)
 
 
 prime_numbers(1, 1000)
