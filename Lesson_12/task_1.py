@@ -21,7 +21,9 @@ if m >= 5:
 
     asc = False
     sums = [column_sort_and_summ(matrix, i, asc := not asc) for i in range(len(matrix))]
-
+    print('\nНе відсортована матриця\n')
+    print(*matrix, sep='\n')
+    print(sums)
     flag = True
     while flag:
         flag = False
