@@ -17,7 +17,7 @@ def exception(a, n):
         n = int(n)
         s = a + n
 
-    except ValueError:
+    except (ValueError, TypeError):  # або залишити except Exception
         print()
         s = str(a + n)
         print(f'конкатенація: {s}')
