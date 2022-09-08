@@ -1,4 +1,4 @@
-def exception(a, n):
+def exception(a, b):
     """
     Exception - це навчальна функція, яка демонструє роботу з винятками в Python.
 
@@ -7,23 +7,22 @@ def exception(a, n):
     числа підсумовуються.
 
     :param a:  для перевірки необхідно ввести не число (зпрацює except)
-    :param n:  для перевірки необхідно ввести не число (зпрацює except)
+    :param b:  для перевірки необхідно ввести не число (зпрацює except)
     :return:  s
 
     """
 
     try:
-        a = int(a)
-        n = int(n)
-        s = a + n
+        a_ = int(a)
+        b_ = int(b)
+        s = a_+b_
+        print("сума чисел: ", s)
 
     except (ValueError, TypeError):  # або залишити except Exception
-        print()
-        s = str(a + n)
+
+        s = a + b
         print(f'конкатенація: {s}')
-    else:
-        print()
-        print(f'Сума {s}')
+
     finally:
         print()
         print("Дякуємо за увагу!")
@@ -32,6 +31,6 @@ def exception(a, n):
 
 
 if __name__ == "__main__":
-    b = input('Введіть число А: ')
-    c = input('Введіть число N: ')
-    exception(b, c)
+    a = input('Введіть число А: ')
+    b = input('Введіть число N: ')
+    exception(a, b)
