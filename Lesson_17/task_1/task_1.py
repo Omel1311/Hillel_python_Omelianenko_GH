@@ -6,3 +6,5 @@ while True:
         print('Введення даних заврешено!')
         break
     fid.write(text+'\n')
+
+fid.close()
