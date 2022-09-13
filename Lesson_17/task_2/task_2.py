@@ -4,7 +4,7 @@ def longest_words(file):
     (або список слів, якщо таких кілька)
 
     :param file: файл
-    :return: final_dict (змінна файлу)
+    :return: final_dict (останній збережений словник)
     """
 
     text = open(file, 'r', encoding='utf-8')
@@ -23,7 +23,6 @@ def longest_words(file):
 
     text.close()
     return final_dict
-
 
 
 if __name__ == "__main__":
