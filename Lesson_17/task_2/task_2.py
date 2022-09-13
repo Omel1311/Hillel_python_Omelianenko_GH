@@ -1,18 +1,20 @@
 def longest_words(file):
     """
-    longest_words - функція, яка виводить слово, що має максимальну довжину (або список слів, якщо таких кілька)
+    longest_words - функція, яка виводить слово, що має максимальну довжину
+    (або список слів, якщо таких кілька)
 
-    :param file:
-    :return:
-
+    :param file: файл
+    :return: final_dict (змінна файлу)
     """
+
     text = open(file, 'r', encoding='utf-8')
 
     text_split = text.read().split()  # читаємо та форматуємо текст
 
     dict = {i: len(i) for i in text_split}  # створюємо словник
 
-    #  print(dict) тестова пеервірка довжини всіх слів
+    #  print(dict) тестова перевірка довжини всіх слів
+
     max_val = max(dict.values())
 
     final_dict = {k: v for k, v in dict.items() if v == max_val}  # визначаємо в словнику пару з макс.значенням
