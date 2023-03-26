@@ -19,4 +19,4 @@ w = q - w
 q = q - w
 print("3 ver = " + str (q),(w))
 
-
+ggg
